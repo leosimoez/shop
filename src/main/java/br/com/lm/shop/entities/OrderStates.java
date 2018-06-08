@@ -1,0 +1,15 @@
+package br.com.lm.shop.entities;
+
+public enum OrderStates {
+	CART,
+	ORDERED,
+	CHECKING_STOCK,
+	ACCEPTED,
+	CHECKING_PAYMENT,
+	INVOICED,
+	ASSEMBLED,
+	POSTED,
+	DELIVERED,
+	CANCELLED,
+	CLOSED
+}

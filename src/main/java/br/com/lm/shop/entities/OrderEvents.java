@@ -1,0 +1,14 @@
+package br.com.lm.shop.entities;
+
+public enum OrderEvents {
+	START_SHOPPING,
+	CHECKOUT,
+	STOCK_CHECK,
+	STOCK_CONFIRM,
+	STOCK_DECLINE,
+	PAYMENT_CONFIRM,
+	PAYMENT_DECLINE,
+	ASSEMBLE,
+	POST,
+	CONFIRM_DELIVERY
+}

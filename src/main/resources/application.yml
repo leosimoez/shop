@@ -1,0 +1,35 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/shop2
+    username: shop
+    password: shop00
+    driver-class-name: com.mysql.jdbc.Driver
+#  datasource:
+#    url: jdbc:mysql://shop-database-service/shop
+#    username: shop
+#    password: shop00
+#    driver-class-name: com.mysql.jdbc.Driver
+#
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+#        dialect: org.hibernate.dialect.MySQLInnoDBDialect
+        show_sql: true
+keycloak-client:
+  id: shop-api
+  secret: 85545aae-e741-426e-8ecb-8b727f94cda3
+  name: shop-api
+  scopes: openid, profile, shop_admin
+  server-url: http://localhost:8080/auth
+  realm: shop-realm
+#  keycloak:
+#    auth-server-url: http://localhost:8080/auth
+#    realm: shop-realm
+#    resource: login-app
+#    public-client: true
